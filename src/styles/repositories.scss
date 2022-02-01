@@ -1,14 +1,34 @@
 section.repository-list {
   margin: 40px;
 
-  h1 {
-    margin-bottom: 16px;
+  div {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    h1 {
+      font-size: 30px;
+    }
   }
 
   ul {
     list-style: none;
 
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    display: flex;
+    margin-left: 20px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+
     li {
+      box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.5);
+      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+      padding: 20px;
+      width: 49%;
+      border-radius: 10px;
+
       & + li {
         margin-top: 20px;
       }
